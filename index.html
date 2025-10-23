@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob Rhose V. Reyes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="topbar">
+    <div class="brand">Jacob<span>R.</span></div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Hi, I’m <span>Jacob Rhose V. Reyes</span></h1>
+      <p>IT Support Specialist & Website Developer</p>
+      <a href="#contact" class="btn">Let’s Connect</a>
+    </div>
+    <div class="hero-image">
+      <img src="logo.jpg" alt="Jacob Photo">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-cards">
+      <div class="card">
+        <h3>Profile</h3>
+        <p>
+          Hi! I’m Jacob, an IT Support Specialist and Website Developer from the Philippines.
+          I have one year of experience providing technical support, maintaining computer systems,
+          and developing functional, user-friendly websites.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Personal Info</h3>
+        <ul>
+          <li><strong>Birthday:</strong> 09/09/2009</li>
+          <li><strong>Hobbies:</strong> Music, Gaming</li>
+          <li><strong>Religion:</strong> Christian (MCGI)</li>
+          <li><strong>Address:</strong> Maryhomes Molino 4, Bacoor, Cavite</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="projects" class="projects">
+  <h2>My Projects</h2>
+  <div class="scroll-container">
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="1.PNG" alt="Portrait Project 1">
+      </div>
+      <h3>Schedule</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="2.jpg" alt="Landscape Project 2">
+      </div>
+      <h3>Hello World</h3> 
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="3.PNG" alt="Portrait Project 3">
+      </div>
+      <h3>Order Form</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="4.jpg" alt="Portrait Project 4">
+      </div>
+      <h3>School Routine</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="5.PNG" alt="Portrait Project 5">
+      </div>
+      <h3>Border Styles</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="6.png" alt="Portrait Project 6">
+      </div>
+      <h3>CSS Fonts and List Styling</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="7.JPG" alt="Portrait Project 7">
+      </div>
+      <h3>A Peter Pan Story</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="8.jpg" alt="Portrait Project 8">
+      </div>
+      <h3>Blockquotes</h3>
+    </div>
+
+    <div class="project-card">
+      <div class="image-wrapper">
+        <img src="9.png" alt="Portrait Project 9">
+      </div>
+      <h3>Resume</h3>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>📞 Phone:</strong> 09929980092</p>
+        <p><strong>📧 Email:</strong> jacobrhosereyes@gmail.com</p>
+        <p><strong>📘 Facebook:</strong> Jacob Rhose V. Reyes</p>
+        <p><strong>📍 Address:</strong> Maryhomes Molino 4, Bacoor, Cavite</p>
+      </div>
+      <form class="contact-form" onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Jacob Rhose V. Reyes | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fdfdfd;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Header */
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 10;
+}
+.brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.brand span {
+  color: #00a3d7;
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav a:hover {
+  color: #00a3d7;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 10%;
+  background: linear-gradient(120deg, #eafaff, #ffffff);
+}
+.hero-text {
+  max-width: 500px;
+}
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+.hero-text span {
+  color: #00a3d7;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+.btn {
+  background: #00a3d7;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #007ba3;
+}
+.hero-image img {
+  width: 380px;
+  border-radius: 75%;
+  border: 5px solid #00a3d7;
+  height: 500px;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 90px 10%;
+}
+.about h2 {
+  font-size: 2rem;
+  color: #00a3d7;
+  margin-bottom: 40px;
+}
+.about-cards {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: 400px;
+  text-align: left;
+}
+.card h3 {
+  color: #00a3d7;
+  margin-bottom: 10px;
+}
+.card p, .card ul {
+  color: #444;
+  line-height: 1.6;
+}
+.card ul li {
+  margin-bottom: 6px;
+}
+
+/* Portfolio */
+.projects {
+  background: #f4fafd;
+  padding: 90px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  color: #00a3d7;
+  margin-bottom: 40px;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 25px;
+  padding-bottom: 10px;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #00a3d7;
+  border-radius: 4px;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 320px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* keeps image proportion consistent */
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes portrait and landscape fit equally */
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  color: #00a3d7;
+  margin: 10px 0 5px;
+}
+
+.project-card p {
+  color: #555;
+  padding: 0 10px 15px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Contact */
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+.contact h2 {
+  color: #00a3d7;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.contact-info, .contact-form {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.contact-form button {
+  display: block;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  background: #00a3d7;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .hero-image img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+}
