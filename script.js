@@ -4,3 +4,7 @@ function sendMessage(e) {
   alert(`Thanks, ${name}! Your message has been sent.`);
   e.target.reset();
 }
+
+alert("Hello!!")
+alert("Welcome to my Website!!")
+alert("feel free to browse")
